@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Weather Forecast App - Get real-time weather updates for any city worldwide" />
+    <meta name="keywords" content="weather, forecast, temperature, humidity, wind speed" />
+    <meta name="author" content="Hirachand Barik, Biswajit Sahoo, Sunil Baral" />
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Animated background particles -->
+    <div class="bg-particles">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <span>WeatherApp</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="features.html" class="nav-link">Features</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="developers.html" class="nav-link">Developers</a>
+        </div>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"/>
+              <line x1="12" y1="1" x2="12" y2="3"/>
+              <line x1="12" y1="21" x2="12" y2="23"/>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+              <line x1="1" y1="12" x2="3" y2="12"/>
+              <line x1="21" y1="12" x2="23" y2="12"/>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </button>
+          <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+      <a href="index.html" class="mobile-link active">Home</a>
+      <a href="features.html" class="mobile-link">Features</a>
+      <a href="about.html" class="mobile-link">About</a>
+      <a href="developers.html" class="mobile-link">Developers</a>
+    </div>
+
+    <main class="app">
+      <section class="card" aria-live="polite">
+        <!-- App Header with Search -->
+        <header class="header">
+          <div class="logo">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"/>
+              <line x1="12" y1="1" x2="12" y2="3"/>
+              <line x1="12" y1="21" x2="12" y2="23"/>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+              <line x1="1" y1="12" x2="3" y2="12"/>
+              <line x1="21" y1="12" x2="23" y2="12"/>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+            <h1 class="title">Weather Forecast</h1>
+          </div>
+          <p class="subtitle">Real-time weather updates for any city</p>
+        </header>
+
+        <!-- Search Form -->
+        <form id="search-form" class="search-form" autocomplete="off">
+          <div class="input-wrapper">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input
+              id="city-input"
+              type="text"
+              name="city"
+              placeholder="Search for a city..."
+              aria-label="City name"
+              required
+            />
+            <button type="button" id="clear-btn" class="clear-btn hidden" aria-label="Clear">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+              </svg>
+            </button>
+          </div>
+          <button type="submit" class="search-btn" aria-label="Search">
+            <span>Search</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Status Message -->
+        <p id="message" class="message" role="status"></p>
+
+        <!-- Loading Spinner -->
+        <div id="loader" class="loader hidden">
+          <div class="spinner"></div>
+          <p>Fetching weather data...</p>
+        </div>
+
+        <!-- Weather Display Section -->
+        <section id="weather" class="weather hidden">
+          <!-- Current Time & Date -->
+          <div class="datetime">
+            <span id="current-date"></span>
+            <span class="separator">•</span>
+            <span id="current-time"></span>
+          </div>
+
+          <!-- Main Weather Info -->
+          <div class="weather-main">
+            <div class="icon-container">
+              <img id="weather-icon" alt="" class="weather-icon" />
+              <div class="icon-glow"></div>
+            </div>
+            <div class="temp-info">
+              <p id="temperature" class="temperature">--<span class="unit">°C</span></p>
+              <p id="condition" class="condition">--</p>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="location-wrap">
+            <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <p id="location" class="location">--</p>
+          </div>
+
+          <!-- Weather Details Grid -->
+          <div class="details">
+            <div class="detail-card">
+              <div class="detail-icon humidity-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                </svg>
+              </div>
+              <div class="detail-info">
+                <span class="detail-value" id="humidity">--%</span>
+                <span class="detail-label">Humidity</span>
+              </div>
+            </div>
+            <div class="detail-card">
+              <div class="detail-icon wind-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/>
+                </svg>
+              </div>
+              <div class="detail-info">
+                <span class="detail-value" id="wind">-- m/s</span>
+                <span class="detail-label">Wind Speed</span>
+              </div>
+            </div>
+            <div class="detail-card">
+              <div class="detail-icon pressure-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="12" y1="16" x2="12" y2="12"/>
+                  <line x1="12" y1="8" x2="12" y2="8"/>
+                </svg>
+              </div>
+              <div class="detail-info">
+                <span class="detail-value" id="pressure">-- hPa</span>
+                <span class="detail-label">Pressure</span>
+              </div>
+            </div>
+            <div class="detail-card">
+              <div class="detail-icon visibility-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                  <circle cx="12" cy="12" r="3"/>
+                </svg>
+              </div>
+              <div class="detail-info">
+                <span class="detail-value" id="visibility">-- km</span>
+                <span class="detail-label">Visibility</span>
+              </div>
+            </div>
+            <div class="detail-card">
+              <div class="detail-icon feels-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/>
+                </svg>
+              </div>
+              <div class="detail-info">
+                <span class="detail-value" id="feels-like">--°C</span>
+                <span class="detail-label">Feels Like</span>
+              </div>
+            </div>
+            <div class="detail-card">
+              <div class="detail-icon clouds-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                </svg>
+              </div>
+              <div class="detail-info">
+                <span class="detail-value" id="clouds">--%</span>
+                <span class="detail-label">Cloudiness</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sunrise & Sunset -->
+          <div class="sun-times">
+            <div class="sun-item sunrise">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 18a5 5 0 0 0-10 0"/>
+                <line x1="12" y1="2" x2="12" y2="9"/>
+                <line x1="4.22" y1="10.22" x2="5.64" y2="11.64"/>
+                <line x1="1" y1="18" x2="3" y2="18"/>
+                <line x1="21" y1="18" x2="23" y2="18"/>
+                <line x1="18.36" y1="11.64" x2="19.78" y2="10.22"/>
+                <line x1="23" y1="22" x2="1" y2="22"/>
+                <polyline points="8 6 12 2 16 6"/>
+              </svg>
+              <div>
+                <span class="sun-label">Sunrise</span>
+                <span class="sun-value" id="sunrise">--:--</span>
+              </div>
+            </div>
+            <div class="sun-item sunset">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 18a5 5 0 0 0-10 0"/>
+                <line x1="12" y1="9" x2="12" y2="2"/>
+                <line x1="4.22" y1="10.22" x2="5.64" y2="11.64"/>
+                <line x1="1" y1="18" x2="3" y2="18"/>
+                <line x1="21" y1="18" x2="23" y2="18"/>
+                <line x1="18.36" y1="11.64" x2="19.78" y2="10.22"/>
+                <line x1="23" y1="22" x2="1" y2="22"/>
+                <polyline points="16 6 12 10 8 6"/>
+              </svg>
+              <div>
+                <span class="sun-label">Sunset</span>
+                <span class="sun-value" id="sunset">--:--</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <p>© 2026 Weather Forecast App | College Project</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="about.html">About</a>
+            <a href="developers.html">Developers</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="theme.js"></script>
+  </body>
+</html>

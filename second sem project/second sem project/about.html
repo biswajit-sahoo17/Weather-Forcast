@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn about the Weather Forecast App and its features" />
+    <title>About - Weather Forecast App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Animated background -->
+    <div class="bg-particles">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <span>WeatherApp</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="features.html" class="nav-link">Features</a>
+          <a href="about.html" class="nav-link active">About</a>
+          <a href="developers.html" class="nav-link">Developers</a>
+        </div>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"/>
+              <line x1="12" y1="1" x2="12" y2="3"/>
+              <line x1="12" y1="21" x2="12" y2="23"/>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+              <line x1="1" y1="12" x2="3" y2="12"/>
+              <line x1="21" y1="12" x2="23" y2="12"/>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </button>
+          <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="features.html" class="mobile-link">Features</a>
+      <a href="about.html" class="mobile-link active">About</a>
+      <a href="developers.html" class="mobile-link">Developers</a>
+    </div>
+
+    <main class="page-content">
+      <!-- Hero Section -->
+      <section class="page-hero">
+        <h1 class="page-title">About WeatherApp</h1>
+        <p class="page-subtitle">Your trusted weather companion</p>
+      </section>
+
+      <!-- About Section -->
+      <section class="content-card">
+        <div class="card-header">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="16" x2="12" y2="12"/>
+              <line x1="12" y1="8" x2="12.01" y2="8"/>
+            </svg>
+          </div>
+          <h2>What is WeatherApp?</h2>
+        </div>
+        <p class="content-text">
+          WeatherApp is a modern, responsive weather forecast application designed to provide users with 
+          accurate and up-to-date weather information for cities around the world. Built using cutting-edge 
+          web technologies, it offers a seamless experience across all devices.
+        </p>
+        <p class="content-text">
+          This project was developed as part of our college curriculum to demonstrate practical application 
+          of web development concepts including HTML5, CSS3, and JavaScript.
+        </p>
+      </section>
+
+      <!-- Mission Section -->
+      <section class="content-card">
+        <div class="card-header">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <h2>Our Mission</h2>
+        </div>
+        <p class="content-text">
+          To provide a user-friendly, fast, and reliable weather forecasting tool that helps people 
+          plan their day effectively. We believe that weather information should be accessible to everyone, 
+          presented in a clean and intuitive interface.
+        </p>
+      </section>
+
+      <!-- Tech Stack -->
+      <section class="tech-stack-section">
+        <h2 class="section-title">Technology Stack</h2>
+        <div class="tech-grid">
+          <div class="tech-card">
+            <div class="tech-icon html">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
+              </svg>
+            </div>
+            <h4>HTML5</h4>
+            <p>Semantic markup for structure</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon css">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/>
+              </svg>
+            </div>
+            <h4>CSS3</h4>
+            <p>Modern styling & animations</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon js">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
+              </svg>
+            </div>
+            <h4>JavaScript</h4>
+            <p>Interactive functionality</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon responsive">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                <line x1="12" y1="18" x2="12.01" y2="18"/>
+              </svg>
+            </div>
+            <h4>Responsive</h4>
+            <p>Mobile-first design</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Goals -->
+      <section class="content-card">
+        <div class="card-header">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+          </div>
+          <h2>Project Goals</h2>
+        </div>
+        <ul class="goals-list">
+          <li>
+            <span class="goal-icon">✓</span>
+            <span>Create an intuitive and visually appealing weather application</span>
+          </li>
+          <li>
+            <span class="goal-icon">✓</span>
+            <span>Implement responsive design for all device types</span>
+          </li>
+          <li>
+            <span class="goal-icon">✓</span>
+            <span>Provide accurate weather information for global cities</span>
+          </li>
+          <li>
+            <span class="goal-icon">✓</span>
+            <span>Ensure fast loading times and smooth performance</span>
+          </li>
+          <li>
+            <span class="goal-icon">✓</span>
+            <span>Support dark and light themes for user preference</span>
+          </li>
+          <li>
+            <span class="goal-icon">✓</span>
+            <span>Follow web accessibility standards</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <h2>Ready to check the weather?</h2>
+        <p>Try our weather app now and stay prepared for any weather condition!</p>
+        <a href="index.html" class="cta-button">
+          <span>Check Weather</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </a>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <p>© 2026 Weather Forecast App | College Project</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="about.html">About</a>
+            <a href="developers.html">Developers</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="theme.js"></script>
+  </body>
+</html>

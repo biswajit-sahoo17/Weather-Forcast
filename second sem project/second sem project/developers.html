@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Meet the developers behind the Weather Forecast App" />
+    <title>Developers - Weather Forecast App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Animated background -->
+    <div class="bg-particles">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <span>WeatherApp</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="features.html" class="nav-link">Features</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="developers.html" class="nav-link active">Developers</a>
+        </div>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"/>
+              <line x1="12" y1="1" x2="12" y2="3"/>
+              <line x1="12" y1="21" x2="12" y2="23"/>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+              <line x1="1" y1="12" x2="3" y2="12"/>
+              <line x1="21" y1="12" x2="23" y2="12"/>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </button>
+          <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="features.html" class="mobile-link">Features</a>
+      <a href="about.html" class="mobile-link">About</a>
+      <a href="developers.html" class="mobile-link active">Developers</a>
+    </div>
+
+    <main class="page-content">
+      <!-- Hero Section -->
+      <section class="page-hero">
+        <h1 class="page-title">Developers</h1>
+        <p class="page-subtitle">Meet the team behind this project</p>
+      </section>
+
+      <!-- Credits Introduction -->
+      <section class="content-card">
+        <div class="card-header">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h2>About This Project</h2>
+        </div>
+        <p class="content-text">
+          The Weather Forecast project has been designed and developed as part of our college academic curriculum. 
+          The purpose of this project is to provide accurate, reliable, and user-friendly weather information 
+          using modern development techniques and technologies.
+        </p>
+        <p class="content-text">
+          The successful completion of this project is the result of consistent effort, collaboration, and teamwork. 
+          All phases of the project, including requirement analysis, system design, development, testing, and 
+          documentation, were carried out with equal contribution and coordination among the developers.
+        </p>
+      </section>
+
+      <!-- Developers Grid -->
+      <section class="developers-section">
+        <h2 class="section-title">Project Developers</h2>
+        <div class="developers-grid">
+          <!-- Developer 1 -->
+          <div class="developer-card">
+            <div class="developer-avatar">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <h3 class="developer-name">Hirachand Barik</h3>
+            <p class="developer-role">Lead Developer</p>
+            <p class="developer-contribution">
+              Contributed to project planning, core development, and overall system integration.
+            </p>
+            <div class="developer-skills">
+              <span class="skill-tag">Project Planning</span>
+              <span class="skill-tag">Core Development</span>
+              <span class="skill-tag">System Integration</span>
+            </div>
+          </div>
+
+          <!-- Developer 2 -->
+          <div class="developer-card">
+            <div class="developer-avatar">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <h3 class="developer-name">Biswajit Sahoo</h3>
+            <p class="developer-role">Backend Developer</p>
+            <p class="developer-contribution">
+              Worked on application logic, data processing, and testing of the system.
+            </p>
+            <div class="developer-skills">
+              <span class="skill-tag">Application Logic</span>
+              <span class="skill-tag">Data Processing</span>
+              <span class="skill-tag">Testing</span>
+            </div>
+          </div>
+
+          <!-- Developer 3 -->
+          <div class="developer-card">
+            <div class="developer-avatar">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <h3 class="developer-name">Sunil Baral</h3>
+            <p class="developer-role">UI/UX Designer</p>
+            <p class="developer-contribution">
+              Assisted in user interface design, feature implementation, and project documentation.
+            </p>
+            <div class="developer-skills">
+              <span class="skill-tag">UI Design</span>
+              <span class="skill-tag">Feature Implementation</span>
+              <span class="skill-tag">Documentation</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Summary -->
+      <section class="content-card highlight-card">
+        <div class="card-icon-large">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+        </div>
+        <h3>Project Summary</h3>
+        <p class="content-text centered">
+          This project represents our practical learning experience and demonstrates the application 
+          of theoretical knowledge to solve real-world problems in an academic environment.
+        </p>
+      </section>
+
+      <!-- References Section -->
+      <section class="references-section">
+        <h2 class="section-title">References & Resources</h2>
+        <div class="references-grid">
+          <div class="reference-card">
+            <h4>Technologies Used</h4>
+            <ul class="reference-list">
+              <li>HTML5 - Structure & Semantics</li>
+              <li>CSS3 - Styling & Animations</li>
+              <li>JavaScript (ES6+) - Functionality</li>
+              <li>Responsive Design - Mobile First</li>
+            </ul>
+          </div>
+          <div class="reference-card">
+            <h4>Design Resources</h4>
+            <ul class="reference-list">
+              <li>Google Fonts - Inter Typography</li>
+              <li>OpenWeatherMap - Weather Icons</li>
+              <li>SVG Icons - Custom Designed</li>
+              <li>Color Palette - Custom Theme</li>
+            </ul>
+          </div>
+          <div class="reference-card">
+            <h4>Learning Resources</h4>
+            <ul class="reference-list">
+              <li>MDN Web Docs - Web Standards</li>
+              <li>W3Schools - Web Tutorials</li>
+              <li>CSS-Tricks - CSS Techniques</li>
+              <li>JavaScript.info - JS Concepts</li>
+            </ul>
+          </div>
+          <div class="reference-card">
+            <h4>Development Tools</h4>
+            <ul class="reference-list">
+              <li>Visual Studio Code - IDE</li>
+              <li>Git - Version Control</li>
+              <li>Chrome DevTools - Debugging</li>
+              <li>Live Server - Development</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Acknowledgment -->
+      <section class="content-card acknowledgment-card">
+        <h3>Acknowledgment</h3>
+        <p class="content-text centered">
+          We extend our sincere gratitude to our college faculty and mentors for their guidance 
+          and support throughout the development of this project. Their valuable insights and 
+          feedback have been instrumental in shaping this application.
+        </p>
+        <p class="college-info">
+          <strong>Academic Year:</strong> 2025-2026<br>
+          <strong>Course:</strong> Web Development Project
+        </p>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <p>© 2026 Weather Forecast App | College Project</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="about.html">About</a>
+            <a href="developers.html">Developers</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="theme.js"></script>
+  </body>
+</html>
