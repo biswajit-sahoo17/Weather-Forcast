@@ -68,7 +68,8 @@ Installation
 
 1.Clone the repository
 
-git clone https://github.com/biswajit-sahoo17/Weather-Forcast.git
+git clone [https://github.com/biswajit-sahoo17/Weather-Forcast.git
+](https://github.com/biswajit-sahoo17/Weather-Forcast.git)
 
 2.Navigate to the project folder
 
