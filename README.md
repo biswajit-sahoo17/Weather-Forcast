@@ -1,165 +1,152 @@
-Project Description:-
+PROJECT OVERVIEW
 
--The Weather Forecast Web Application is a modern, responsive, and user-friendly web-based system developed to provide accurate and up-to-date weather information for various cities. The project enables users to search for any supported city and instantly view weather details such as temperature, weather condition, humidity, wind speed, pressure, visibility, cloud percentage, sunrise, and sunset time.
+The Weather Forecast Web Application is a modern, responsive, and intuitive web platform that provides real-time weather information for multiple Indian cities (including several cities from Odisha). Developed as a second-semester academic project, it demonstrates core front‑end concepts such as dynamic DOM manipulation, localStorage theming, and modular JavaScript — all without relying on external API calls.
 
--This application is designed using HTML5, CSS3, and JavaScript, following a modular and well-structured approach. The system includes multiple pages such as Home, Features, About, and Developers, ensuring proper navigation and professional presentation.
+The system uses a predefined weather database (JavaScript object), making it perfect for offline demonstration, academic evaluation, and beginner-friendly learning.
 
--Instead of relying on continuous external API calls, the project uses a predefined weather database (JavaScript object) for multiple Indian cities, including Odisha cities, making it suitable for academic demonstration and offline use.
+✨ Features
 
--The application also supports dark and light theme switching, responsive design for mobile and desktop devices, animated UI elements, and dynamic weather icons for better user experience.
+✔ City‑Based Weather Search – Instantly fetch weather details for any supported city.
 
-Problem Statement:-
-1.Weather information is essential for daily planning and decision-making.
+✔ Comprehensive Weather Data – Temperature, condition, humidity, wind speed, pressure, visibility, cloud %, sunrise & sunset.
 
-2.Many users need a simple, fast, and easy-to-use weather system.
+✔ Dynamic Weather Icons – Visual representation of weather conditions.
 
-3.Existing systems may be complex, API-dependent, or difficult for beginners to understand.
+✔ Dark / Light Theme Toggle – Switch themes with persistent preference stored in localStorage.
 
-4.There is a need for a lightweight academic project that demonstrates real-time UI updates using JavaScript.
+✔ Fully Responsive – Optimized for desktops, tablets, and mobile devices.
 
-Objectives of the Project:-
+✔ Multi‑Page Navigation – Home, Features, About, and Developers pages.
 
-1.To design a web-based weather forecasting system
+✔ Error Handling – Clear feedback when a city is not found.
 
-2.To display current weather details for different cities
+✔ Animated UI – Smooth animations and transitions for better user experience.
 
-3.To implement city-based weather search functionality
+🛠️ Technology Stack
 
-4.To demonstrate dynamic data handling using JavaScript
+Technology---------------------Purpose
 
-5.To develop a responsive and interactive user interface
+HTML5-------------------------Semantic page structure & content
 
-6.To provide theme switching (dark/light mode) for better usability
+CSS3---------------------------Styling, animations, responsive design
 
-7.To build a project suitable for academic and learning purposes
+JavaScript---------------------(Vanilla)	DOM manipulation, weather logic, theme switching
 
-System Overview:-
+LocalStorage------------------Persisting user theme preference
 
-The system works as follows:-
-The user enters a city name in the search box.
+No external APIs – All weather data is stored locally in a JavaScript object.
 
-JavaScript checks the city name against the predefined weather database.
+📁 Project Structure
 
-If the city is found, weather details are displayed dynamically.
+Weather-Forcast/
 
-If the city is not found, an error message is shown.
+├── index.html----------# Home page (weather search & display)
 
-Weather information updates without reloading the page.
+├── features.html-------# Features overview
 
-The theme preference is saved using localStorage.
+├── about.html----------# About the project
 
-Modules of the Project
+├── developers.html-----# Team information
+
+├── style.css-----------# Main stylesheet (light/dark themes, responsive)
+
+├── script.js-----------# Core logic (search, display, theme, error handling)
+
+├── README.md-----------# Project documentation
+
+└── assets/-------------# (Optional) Images, icons, etc.
+
+🚀 Getting Started
+
+Prerequisites
+
+A modern web browser (Chrome, Firefox, Edge, Safari)
+
+No server or API key required – just open the HTML files!
+
+Installation
+
+1.Clone the repository
+
+git clone https://github.com/biswajit-sahoo17/Weather-Forcast.git
+
+2.Navigate to the project folder
+
+cd Weather-Forcast
+
+Open index.html
+
+Double‑click the file or use a local development server (e.g., Live Server for VS Code).
+
+🎯 Key Modules
 
 1. User Interface Module
-   
-Clean and modern UI design
 
-Animated background and icons
-
-Responsive layout for all devices
-
-Navigation bar with multiple pages
+   Clean, modern layout with animated background, smooth cards, and responsive navigation bar.
 
 2. Search Module
 
-City input field with validation
-
-Clear button functionality
-
-Error handling for invalid city names
+   Input validation, clear button, and intelligent error messaging for unsupported cities.
 
 3. Weather Display Module
-   
-Temperature (°C)
 
-Weather condition and description
-
-Humidity and pressure
-
-Wind speed and visibility
-
-Cloud percentage
-
-Sunrise and sunset time
-
-Current date and time display
+   Dynamically shows temperature (°C), condition, humidity, pressure, wind speed, visibility, cloud %, sunrise, and sunset.
 
 4. Theme Management Module
-   
-Dark and light theme support
 
-Theme preference stored in browser localStorage
+   Dark/light mode toggle with automatic system preference detection. User choice is saved across sessions via localStorage.
 
-Automatic system theme detection
+5. Information Pages
 
-5. Navigation & Information Module
-   
-Features page explaining application capabilities
+   Features: Highlights all capabilities.
 
-About page describing project purpose
+   About: Describes project motivation and scope.
 
-Developers page listing team members and contributions
+   Developers: Credits the team members and their contributions.
 
-Technology Stack Used:-
+✅ Advantages & Limitations
 
-HTML5 – Page structure and semantic elements
+🟢 Advantages
 
-CSS3 – Styling, animations, responsive design
+Zero API dependency – Works offline, perfect for academic evaluation.
 
-JavaScript (Vanilla JS) – Logic, DOM manipulation, data handling
+Blazing fast – No network latency, instant results.
 
-LocalStorage – Theme preference storage
+Clean and intuitive UI – Easy to navigate for all age groups.
 
-Key Features of the Project:-
+Academic friendly – Demonstrates core front‑end concepts without complexity.
 
-City-based weather search
+Cross‑browser compatible – Tested on all modern browsers.
 
-Real-time weather data display (mock database)
+🔴 Limitations
 
-Dynamic weather icons
+Static weather data – Limited to predefined cities (no live updates).
 
-Animated and modern UI
+Current weather only – No hourly or 7‑day forecast.
 
-Dark and light mode toggle
+City list is fixed – Users cannot add new cities dynamically.
 
-Mobile-friendly responsive design
+🔮 Future Enhancements
 
-Multiple information pages
+🌍 Integration with real‑time weather APIs (OpenWeatherMap, WeatherAPI)
 
-Error handling and loading indicators
+📅 7‑day forecast and hourly breakdown
 
-Advantages of the System:-
+📍 Geolocation – Auto‑detect user’s city
 
-Easy to use and understand
+🌫️ Air Quality Index (AQI) display
 
-No external API dependency for demonstration
+🌐 Multi‑language support
 
-Fast performance
+⚠️ Weather alerts and notifications
 
-Clean and professional UI
+👥 Developers
 
-Suitable for beginners and academic projects
+This project was developed as part of the Semester Academic Project by:
 
-Works on all modern browsers
+Hirachand Barik - Lead Developer[Project Planning, Core Development, System Integration]
 
-Limitations:-
+Biswajit Sahoo – Backend Developer[Application Logic, Data Processing, Testing]
 
-Weather data is static (mock data)
+Sunil Baral - UI/UX Designer[UI Design, Feature Implementation, Documentation]
 
-Limited to predefined cities
-
-No future weather forecast (only current conditions)
-
-Future Enhancements:-
-
-Integration with real-time weather APIs (OpenWeatherMap)
-
-7-day and hourly weather forecast
-
-Auto-location based weather detection
-
-Air quality index (AQI) display
-
-Multi-language support
-
-Weather alerts and notifications
